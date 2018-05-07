@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to Ansh System Pvt. Ltd.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="assets/js/foldscroll.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <style>
+        #welcome{
+            height: 500px;
+            background-color: #eee;
+        }
+        #about {
+            height:500px;
+            background-color: rgb(106, 164, 240);
+        }
+        #resume {
+            height:500px;
+            background-color: rgb(106, 164, 240);
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#sidebar a[href^="#"]').on('click',function (e) {          
+                e.preventDefault();
+                var target = this.hash;
+                $target = $(target);            
+                $('html, body').stop().animate({               
+                    'scrollTop':  $target.offset().top //no need of parseInt here
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+        <section class="quotes">
+                <article class="quotes-section active" id="weSpecialiseIin">
+                    <p class="quotes-block-heading">WE SPECIALIZE IN</p>
+                    <div class="row content-wrap-section">
+                        <div class="col-md-6 col-xs-6 specialization-description-block">
+                            <div class="specialization-description-hover">
+                                <h4><span class="hover-line"><img src="assets/images/large/design.png" alt="">UI/UX Development</span></h4>
+                                <div class="specialization-description-hover-show-content">
+                                    <h5>We are proud of UX/UI centric approach. Our artists and technology innovations are driven by UX based approach.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 specialization-description-block">
+                            <div class="specialization-description-hover">
+                                <h4><span class="hover-line"><img src="assets/images/large/web.png" alt="">Web/Mobile Development</span></h4>
+                                <div class="specialization-description-hover-show-content">
+                                    <h5>We are preferred partners for hundreds of companies across Europe for Web Application/Software and Mobile App Development projects.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row content-wrap-section">
+                        <div class="col-md-6 col-xs-6 specialization-description-block">
+                            <div class="specialization-description-hover">
+                                <h4><span class="hover-line"><img src="assets/images/large/virtual_team.png" alt="">Virtual Team</span></h4>
+                                <div class="specialization-description-hover-show-content">
+                                    <h5> We collaborate with clients on long period contracts by providing dedicated support teams usually working in Agile/Kanban methodology.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 specialization-description-block">
+                            <div class="specialization-description-hover">
+                                <h4><span class="hover-line"><img src="assets/images/large/dev.png" alt="">Dev-Ops</span></h4>
+                                <div class="specialization-description-hover-show-content">
+                                    <h5>For most of our high-criticality projects we go for Dev-Ops model to ensure short cycle-time and rapid code deployment.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row content-wrap-section">
+                        <div class="col-md-6 col-xs-6 specialization-description-block">
+                            <div class="specialization-description-hover">
+                                <h4><span class="hover-line"><img src="assets/images/large/In-house.png" alt="">In-House Product Dev</span></h4>
+                                <div class="specialization-description-hover-show-content">
+                                    <h5>Smartbooqing is an in-house product developed for Finance & Accounting Firms in Europe. For more info –<a href="https://www.smartbooqing.com/"> click here</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 specialization-description-block">
+                            <div class="specialization-description-hover">
+                                <h4><span class="hover-line"><img src="assets/images/large/test.png" alt="">Automated Testing</span></h4>
+                                <div class="specialization-description-hover-show-content">
+                                    <h5>We collaborate to provide Selenium based stand-alone testing services across our clients in Europe for stress free deployment and assured success.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="quotes-section our-mission" id="ourMission">
+                    <p class="quotes-block-heading">OUR MISSION & STORY</p>
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <video controls>
+                                <source src="assets/images/large/video/Our_Mission_Story.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <!-- <div class="col-md-6 col-xs-6">
+                            <iframe src="https://www.youtube.com/embed/hp6X3g0TCzQ" frameborder="0" allowfullscreen></iframe>
+                        </div> -->
+                    </div>
+                </article>
+
+                <article class="quotes-section life-at-ansh" id="lifeAtAnsh">
+                    <p class="quotes-block-heading">LIFE@ANSH WORK & FUN MOMENTS</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <video controls>
+                                <source src="assets/images/large/video/life_at_ansh.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="quotes-section testimonial" id="testimonials">
+                    <p class="quotes-block-heading">EMPLOYEE TESTIMONIALS</p>
+                    <div id="testimonial_carousel" class="carousel slide" data-ride="carousel">
+                        
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner testimonial-blocks">
+                            <div class="item active">
+                               <div class="row">
+                                <div class="col-md-5 col-xs-5">
+                                    <img src="assets/images/large/testimonial_img1.png" alt="Los Angeles" class="img-responsive">
+                                </div>
+                                <div class="col-md-7 col-xs-7">
+                                   <blockquote class="testimonial-box testimonial-text">
+                                        <p class="quote-text">“I have so much pride in the incredible amount of hard work and detail that goes into each new product. After 10 years, I am still excited about our launches, and this energy is contagious and keeps me coming back every day“</p>
+                                        <footer>Chanchal Dumbre UI Dev.</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="item">
+                                    <div class="row">
+                                <div class="col-md-5 col-xs-5">
+                                    <img src="assets/images/large/testimonial_img1.png" alt="Los Angeles" class="img-responsive">
+                                </div>
+                                <div class="col-md-7 col-xs-7">
+                                    <blockquote class="testimonial-box testimonial-text">
+                                        <p class="quote-text">“I have so much pride in the incredible amount of hard work and detail that goes into each new product. After 10 years, I am still excited about our launches, and this energy is contagious and keeps me coming back every day“</p>
+                                        <footer>Chanchal Dumbre UI Dev.</footer>
+                                    </blockquote>
+                                </div>
+                                </div>
+                            </div>
+                        
+                            <div class="item">
+                               <div class="row">
+                                <div class="col-md-5 col-xs-5">
+                                    <img src="assets/images/large/testimonial_img1.png" alt="Los Angeles" class="img-responsive">
+                                </div>
+                                <div class="col-md-7 col-xs-7">
+                                    <blockquote class="testimonial-box testimonial-text">
+                                        <p class="quote-text">“I have so much pride in the incredible amount of hard work and detail that goes into each new product. After 10 years, I am still excited about our launches, and this energy is contagious and keeps me coming back every day“</p>
+                                        <footer>Chanchal Dumbre UI Dev.</footer>
+                                    </blockquote>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#testimonial_carousel" data-slide="prev" role="button">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#testimonial_carousel" data-slide="next" role="button"> 
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="quotes-section our_team" id="ourTeam">
+                    <p class="quotes-block-heading">Our team</p>
+                        <div class="row">
+                            <div class="col-md-4 col-xs-4">
+                                <img src="assets/images/large/testimonial_img1.png" alt="Los Angeles">
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <img src="assets/images/large/testimonial_img1.png" alt="Los Angeles">
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <img src="assets/images/large/testimonial_img1.png" alt="Los Angeles">
+                            </div>
+                        </div>
+                </article>
+                
+            </section>
+            
+            <div class="controlBtns" id="controlBtns">
+                <ul>
+                    <li><a href="#weSpecialiseIin">1</a></li>
+                    <li><a href="#ourMission">2</a></li>
+                    <li><a href="#lifeAtAnsh">3</a></li>
+                    <li><a href="#testimonials">4</a></li>
+                    <li><a href="#ourTeam">5</a></li>
+                </ul>
+            </div>
+                
+</body>
+<script>
+        $(document).ready(function(){
+            $('#controlBtns a[href^="#"]').on('click',function (e) {          
+                e.preventDefault();
+                var target = this.hash;
+                $target = $(target);            
+                $('html, body').stop().animate({               
+                    'scrollTop':  $target.offset().top //no need of parseInt here
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+</html>
